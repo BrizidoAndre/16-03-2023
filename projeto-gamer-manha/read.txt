@@ -1,0 +1,2 @@
+inline: Forca os elementos da pagina a ficarem em linha.
+block: forca os elementos a ficar com width de 100% da viewport.
