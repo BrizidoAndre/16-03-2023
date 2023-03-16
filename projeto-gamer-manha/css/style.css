@@ -308,8 +308,8 @@ main .jogos .jogos-flex {
         background-image: url(../assets/images/Vector.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: top;
         width: auto;
-        height: 823;
+        height: 722px;
     }
 }
