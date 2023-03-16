@@ -216,16 +216,24 @@ main .jogos .jogos-flex {
 
 /* Desktops >= 1200px*/
 @media screen and (min-width: 1200px) {
-    .layout-grid {
-        width: 100%;
-        max-width: 1200px;
-    }
+    /* ALTERACOES GERAIS */
     header .menu-hamburger,
     header .menu-pontinhos,
     header .header-bottom nav .phone,
     header .header-bottom nav .email,
     header .header-bottom nav .midias-sociais {
         display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+    .banner h1{
+        color: #1B1426;
+        font-size: 80px
     }
     /* HEADER  */
     header {
@@ -252,8 +260,10 @@ main .jogos .jogos-flex {
     }
     header .header-top .midias-sociais{
         display: flex;
-        gap: 27px;
-        border: 2px dotted cornflowerblue;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 130px;
     }
     header #linhamarela{
         width: 100vw;
@@ -268,10 +278,12 @@ main .jogos .jogos-flex {
     }
     header .header-bottom nav {
         position: static;
-        width: 440px;
-        height: 50px;
+        width: 407px;
+        height: 17px;
         flex-direction: row;
-
+        align-items: center;
+        padding-bottom: 0px;
+        /* border: 2px dotted gold; */
     }
     header .header-bottom nav > a{
         font-size: 14px;
@@ -281,14 +293,23 @@ main .jogos .jogos-flex {
     header .header-bottom .menu-usuarios {
         position: static;
         flex-direction: row;
-        width: 180px;
-        height: 50px;
+        width: auto;
+        height: auto;
         background-color: transparent;
-        border: 2px dotted yellow;
+        padding: 0px;
+        gap: 30px;
+        /* border: 2px dotted yellow; */
     }
-
     /* MAIN */
     main {
         margin-top: 0;
+    }
+    main .banner{
+        background-image: url(../assets/images/Vector.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: auto;
+        height: 823;
     }
 }
