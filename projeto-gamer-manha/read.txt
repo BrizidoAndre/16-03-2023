@@ -3,3 +3,6 @@ display: block; forca os elementos a ficar com width de 100% da viewport.
 
 background-size: cover; prioriza a largura da imagem
 background-size: contain; prioriza a altura da imagem
+
+
+a funcao hover do css DEVE ficar IMEDIATAMENTE AO LADO do elemento que sera aplicada as funcoes

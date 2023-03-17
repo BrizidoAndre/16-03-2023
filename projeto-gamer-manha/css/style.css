@@ -25,6 +25,7 @@
 
 body {
     color: #ffffff;
+    background-color: #1B1426;
 }
 
 /* Classes genéricas */
@@ -107,7 +108,9 @@ header .header-bottom nav>a {
     text-decoration: none;
     border-bottom: 2px solid #F9AA01;
 }
-
+header .header-bottom nav>a:hover{
+    background-color: #f9aa01;
+}
 header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
@@ -132,6 +135,9 @@ header .header-bottom nav .midias-sociais {
     justify-content: center;
     /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
     gap: 50px;
+}
+header .header-bottom nav .midias-sociais>a:hover {
+    box-shadow: 0px 0px 10px white;
 }
 
 /* menu lateral direito - ícones */
@@ -210,7 +216,32 @@ main .jogos .jogos-flex {
     /* vertical - column */
     align-items: center;
 }
-
+footer{
+    background-color: #1B1426;
+}
+footer .footerinicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41px;
+}
+footer article .logo{
+    width: 110px;
+    margin-top: 110px;
+}
+footer .footerinicio p{
+    font-family: Inter;
+    text-align: justify;
+}
+footer article #midiasfooter{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+footer article .contatos-titulo{
+    color: #F9AA01;
+}
 /* Tablets >= 768px*/
 @media screen and (min-width: 768px) {}
 
@@ -289,6 +320,11 @@ main .jogos .jogos-flex {
         font-size: 14px;
         border: none;
     }
+    header .header-bottom nav > a:hover{
+        color: #F9AA01;
+        text-shadow: 0px 0px 10px white;
+        background-color: transparent;
+    }
 
     header .header-bottom .menu-usuarios {
         position: static;
@@ -312,4 +348,35 @@ main .jogos .jogos-flex {
         width: auto;
         height: 722px;
     }
+    main .jogos{
+        height: 500px;
+    }
+    main .jogos .jogos-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main .jogos .jogos-flex img{
+        width: 556px;
+    }
+    main .programer{
+        height: 1000px;
+        background-color: #F9AA01;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 85px;
+    }
+    main .programer #tituloprogramer{
+        color: #1B1426;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 40;
+        font-family: TitilliumWeb-Black;
+    }
+    main .programer #linhapreta{
+        border: #1B1426;
+        width: 204px;
+        height: 1px;
 }
