@@ -252,8 +252,77 @@ footer article #midiasfooter{
     display: flex;
     justify-content: space-between;
 }
+footer article .subamarelo{
+    border: 1px solid #F9AA01;
+    width: 102px;
+}
+footer article .titulo-footer{
+    margin: 80px 0px 35px 0px;
+}
+footer article #link-uteis .menu-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer article h3{
+    color: white;
+    font-family: titilliumweb-bold;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+footer article #link-uteis .menu-footer > li{
+    margin: 0px 20px;
+    list-style: none;
+}
+footer article #link-uteis .menu-footer > li::before{
+    content: "\2013";
+    size: 20px;
+    color: #F9AA01;
+}
+footer article #link-uteis .menu-footer > li a{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: titilliumweb-bold;
+}
+footer article div p{
+    font-family: titilliumweb-bold;
+}
 footer article .contatos-titulo{
     color: #F9AA01;
+    font-size: 16px;
+}
+footer #newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+footer #newsletter form .frm-news,
+footer #newsletter form button{
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+footer #newsletter form input{
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(239,239,239, .6), rgba(239,239,239, .1));
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-family: titilliumweb-bold;
+    font-size: 16px;
+    color: white;
+}
+footer #newsletter form input::placeholder{
+    color: white;
+}
+footer #newsletter form button{
+    background-color: #F9AA01;
+}
+footer #newsletter form button h3{
+    color: black;
 }
 /* Tablets >= 768px*/
 @media screen and (min-width: 768px) {}
