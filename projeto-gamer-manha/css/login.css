@@ -16,6 +16,7 @@
     font-family: Inter;
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 /* QUICKSAND */
 @font-face {
     font-family: Quicksand;
@@ -33,7 +34,7 @@ body {
     background-color: #1B1426;
 }
 
-p{
+p {
     font-family: Quicksand;
 }
 
@@ -117,9 +118,11 @@ header .header-bottom nav>a {
     text-decoration: none;
     border-bottom: 2px solid #F9AA01;
 }
-header .header-bottom nav>a:hover{
+
+header .header-bottom nav>a:hover {
     background-color: #f9aa01;
 }
+
 header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
@@ -145,6 +148,7 @@ header .header-bottom nav .midias-sociais {
     /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
     gap: 50px;
 }
+
 header .header-bottom nav .midias-sociais>a:hover {
     box-shadow: 0px 0px 10px white;
 }
@@ -153,8 +157,8 @@ header .header-bottom nav .midias-sociais>a:hover {
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
-    right: -19vw;
-    width: 19vw;
+    right: -20vw;
+    width: 20vw;
     height: 170px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
@@ -166,22 +170,98 @@ header .header-bottom .menu-usuarios {
 
     transition: right 0.4s;
 }
-section{
+
+section {
     background-image: url(../assets/images/Background/Retangulo_com_blur.png);
     background-size: cover;
 
- 
     height: 756px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+main section .caixalogin {
+    width: 335px;
+    height: 462px;
+    padding: 1px;
 
-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    backdrop-filter: blur(6px);
+
+    border-image-slice: 1;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background:
+        /* Efeito no fundo */
+        linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)) padding-box,
+        /* Efeito na borda */
+        linear-gradient(to right bottom, #FFFFFF, #FFFFFF00) border-box;
+}
+
+main section .caixalogin>hr {
+    border: 1px solid #F9AA01;
+    width: 90px;
+    margin-top: 46px;
+}
+
+main section .caixalogin>h2 {
+    font-family: titilliumweb-black;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main section .caixalogin .barradecadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+}
+
+main section .caixalogin .barradecadastro .caixadetexto{
+    width: 273px;
+    height: 40px;
+
+    padding: 5px 10px;
+
+    border-image-slice: 1;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background:
+        /* Efeito no fundo */
+        linear-gradient(to right, #EFEFEF99, #FFFFFF00) padding-box,
+        /* Efeito na borda */
+        linear-gradient(to right, #FFFFFF, #FFFFFF00) border-box;
+}
+
+main section .caixalogin .barradecadastro .caixadetexto input{
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    color: #FFFFFF;
+}
+::placeholder{
+    color: white;
+}
+main section .caixalogin .barradecadastro input::before{
+
+}
+
+footer {
     box-shadow: inset 0 30px 9cm rgba(0, 0, 0, 1);
     background-image: url(../assets/images/backgroung_footer.png);
     background-position: top;
     background-size: contain;
 }
-footer .footerinicio{
+
+footer .footerinicio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,75 +269,90 @@ footer .footerinicio{
     padding: 60px 0px 30px 0px;
     gap: 41px;
 }
+
 /* ALTERANDO O TAMANHO DO LOGOTIPO */
-footer article .logo{
+footer article .logo {
     width: 110px;
 }
-footer article p{
+
+footer article p {
     font-family: Quicksand;
     text-align: justify;
 }
-footer article #midiasfooter{
+
+footer article #midiasfooter {
     width: 350px;
     display: flex;
     justify-content: space-between;
 }
-footer article .subamarelo{
+
+footer article .subamarelo {
     border: 1px solid #F9AA01;
     width: 102px;
 }
-footer article .titulo-footer{
+
+footer article .titulo-footer {
     margin: 80px 0px 35px 0px;
 }
-footer article #link-uteis .menu-footer{
+
+footer article #link-uteis .menu-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-footer article h3{
+
+footer article h3 {
     color: white;
     font-family: titilliumweb-bold;
     font-size: 30px;
     text-transform: capitalize;
 }
-footer article #link-uteis .menu-footer > li{
+
+footer article #link-uteis .menu-footer>li {
     margin: 0px 20px;
     list-style: none;
 }
-footer article #link-uteis .menu-footer > li::before{
+
+footer article #link-uteis .menu-footer>li::before {
     content: "\2013";
     size: 20px;
     color: #F9AA01;
 }
-footer article #link-uteis .menu-footer > li a{
+
+footer article #link-uteis .menu-footer>li a {
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
     font-family: titilliumweb-bold;
 }
-footer article div p{
+
+footer article div p {
     font-family: titilliumweb-bold;
 }
-footer article .contatos-titulo{
+
+footer article .contatos-titulo {
     color: #F9AA01;
     font-size: 16px;
 }
-footer #newsletter form{
+
+footer #newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
+
 footer #newsletter form .frm-news,
-footer #newsletter form button{
+footer #newsletter form button {
     width: 80%;
     height: 40px;
     border-radius: 8px;
     margin-top: 20px;
 }
-footer #newsletter form input{
+
+footer #newsletter form input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(239,239,239, .6), rgba(239,239,239, .1));
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
     border: 1px solid white;
     padding: 5px 10px;
@@ -265,12 +360,15 @@ footer #newsletter form input{
     font-size: 16px;
     color: white;
 }
-footer #newsletter form input::placeholder{
+
+footer #newsletter form input::placeholder {
     color: white;
 }
-footer #newsletter form button{
+
+footer #newsletter form button {
     background-color: #F9AA01;
 }
-footer #newsletter form button h3{
+
+footer #newsletter form button h3 {
     color: black;
 }
