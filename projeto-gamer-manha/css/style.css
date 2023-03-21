@@ -16,6 +16,7 @@
     font-family: Inter;
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 /* QUICKSAND */
 @font-face {
     font-family: Quicksand;
@@ -33,8 +34,14 @@ body {
     background-color: #1B1426;
 }
 
-p{
+p {
     font-family: Quicksand;
+}
+
+h2 {
+    font-family: titilliumweb-black;
+    font-size: 18px;
+    color: #1B1426;
 }
 
 /* Classes genéricas */
@@ -117,9 +124,11 @@ header .header-bottom nav>a {
     text-decoration: none;
     border-bottom: 2px solid #F9AA01;
 }
-header .header-bottom nav>a:hover{
+
+header .header-bottom nav>a:hover {
     background-color: #f9aa01;
 }
+
 header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
@@ -145,6 +154,7 @@ header .header-bottom nav .midias-sociais {
     /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
     gap: 50px;
 }
+
 header .header-bottom nav .midias-sociais>a:hover {
     box-shadow: 0px 0px 10px white;
 }
@@ -225,13 +235,126 @@ main .jogos .jogos-flex {
     /* vertical - column */
     align-items: center;
 }
-footer{
+
+main .programer {
+    height: 1535px;
+    background-color: #F9AA01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .programer #tituloprogramer {
+    text-transform: uppercase;
+    margin: 85px 0 35px 0;
+}
+
+main .programer #linhapreta {
+    border: 1px solid #1B1426;
+    width: 204px;
+    margin-bottom: 82px;
+}
+
+main .programer .backgroundprogramer {
+    background-image: url(../assets/images/Background/kiljoy.png);
+    display: flex;
+    align-items: center;
+    width: 314px;
+    height: 511px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 130px;
+}
+
+main .programer .backgroundprogramer .bordabrancagradiente {
+    background-image: linear-gradient(to right bottom, #FFFFFFF7, #1B142600);
+    padding: 0.8px;
+    border-radius: 8px;
+}
+
+main .programer .backgroundprogramer .bordabrancagradiente .caixaroxa {
+    background-image: linear-gradient(to bottom, #6E31EC33, #2D076DD4);
+    backdrop-filter: blur(6px);
+    
+    width: 231px;
+    height: 300px;
+    opacity: 1;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .programer .backgroundprogramer .bordabrancagradiente .caixaroxa .subtituloprogramer{
+    font-family: titilliumweb-black;
+    font-size: 18px;
+    text-shadow: 0 0 6px #C6A5E5;
+    text-transform: uppercase;
+}
+main .programer .backgroundprogramer .bordabrancagradiente .caixaroxa .textoprogramer{
+    font-family: quicksand;
+    font-size: 13px;
+    text-align: justify;
+    width: 176px;
+}
+main .programer #backgroundprogramer2{
+    background-image: url(../assets/images/Background/lp-gamer-home_0000s_0000s_0002_lol.png);
+    width: 322px;
+    height: 428px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+main .noticia{
+    background-image: url(../assets/images/Background/backgrund_notícias.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .noticia > h2{
+    font-family: titilliumweb-black;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 46px 0 35px 0;
+}
+main .noticia > hr{
+    width: 204px;
+    border: 1px solid #F9AA01;
+    margin-bottom: calc(118px - 46px);
+}
+main .noticia .cardnoticia{
+    width: 335px;
+    height: 387px;
+
+    background-image: linear-gradient(to right bottom, #251A3457, #05010CC9);
+
+    border-radius: 8px;
+    margin-top: 46px;
+}
+main .noticia .cardnoticia h3{
+    font-family: titilliumweb-bold;
+    font-size: 24px;
+    margin: 16px 25px;
+    color: white;
+}
+main .noticia .cardnoticia p{
+    font-family: quicksand;
+    font-size: 16px;
+    text-align: justify;
+    margin: 16px 25px;
+}
+footer {
     box-shadow: inset 0 30px 9cm rgba(0, 0, 0, 1);
     background-image: url(../assets/images/backgroung_footer.png);
     background-position: top;
     background-size: contain;
 }
-footer .footerinicio{
+
+footer .footerinicio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,75 +362,90 @@ footer .footerinicio{
     padding: 60px 0px 30px 0px;
     gap: 41px;
 }
+
 /* ALTERANDO O TAMANHO DO LOGOTIPO */
-footer article .logo{
+footer article .logo {
     width: 110px;
 }
-footer article p{
+
+footer article p {
     font-family: Quicksand;
     text-align: justify;
 }
-footer article #midiasfooter{
+
+footer article #midiasfooter {
     width: 350px;
     display: flex;
     justify-content: space-between;
 }
-footer article .subamarelo{
+
+footer article .subamarelo {
     border: 1px solid #F9AA01;
     width: 102px;
 }
-footer article .titulo-footer{
+
+footer article .titulo-footer {
     margin: 80px 0px 35px 0px;
 }
-footer article #link-uteis .menu-footer{
+
+footer article #link-uteis .menu-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-footer article h3{
+
+footer article h3 {
     color: white;
     font-family: titilliumweb-bold;
     font-size: 30px;
     text-transform: capitalize;
 }
-footer article #link-uteis .menu-footer > li{
+
+footer article #link-uteis .menu-footer>li {
     margin: 0px 20px;
     list-style: none;
 }
-footer article #link-uteis .menu-footer > li::before{
+
+footer article #link-uteis .menu-footer>li::before {
     content: "\2013";
     size: 20px;
     color: #F9AA01;
 }
-footer article #link-uteis .menu-footer > li a{
+
+footer article #link-uteis .menu-footer>li a {
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
     font-family: titilliumweb-bold;
 }
-footer article div p{
+
+footer article div p {
     font-family: titilliumweb-bold;
 }
-footer article .contatos-titulo{
+
+footer article .contatos-titulo {
     color: #F9AA01;
     font-size: 16px;
 }
-footer #newsletter form{
+
+footer #newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
 }
+
 footer #newsletter form .frm-news,
-footer #newsletter form button{
+footer #newsletter form button {
     width: 80%;
     height: 40px;
     border-radius: 8px;
     margin-top: 20px;
 }
-footer #newsletter form input{
+
+footer #newsletter form input {
     background-color: transparent;
-    background-image: linear-gradient(to right bottom, rgba(239,239,239, .6), rgba(239,239,239, .1));
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, .6), rgba(239, 239, 239, .1));
     backdrop-filter: blur(6px);
     border: 1px solid white;
     padding: 5px 10px;
@@ -315,20 +453,25 @@ footer #newsletter form input{
     font-size: 16px;
     color: white;
 }
-footer #newsletter form input::placeholder{
+
+footer #newsletter form input::placeholder {
     color: white;
 }
-footer #newsletter form button{
+
+footer #newsletter form button {
     background-color: #F9AA01;
 }
-footer #newsletter form button h3{
+
+footer #newsletter form button h3 {
     color: black;
 }
+
 /* Tablets >= 768px*/
 @media screen and (min-width: 768px) {}
 
 /* Desktops >= 1200px*/
 @media screen and (min-width: 1200px) {
+
     /* ALTERACOES GERAIS */
     header .menu-hamburger,
     header .menu-pontinhos,
@@ -337,58 +480,73 @@ footer #newsletter form button h3{
     header .header-bottom nav .midias-sociais {
         display: none;
     }
-    body{
+
+    body {
         overflow-x: hidden;
     }
+
     .layout-grid {
         width: 100%;
         max-width: 1200px;
     }
-    .banner h1{
+
+    .banner h1 {
         color: #1B1426;
         font-size: 80px
     }
+
     /* HEADER  */
     header {
         position: static;
         height: 140px;
         /* border: 1px dotted wheat; */
     }
-    header .header-top{
+
+    header .header-top {
         display: flex;
         justify-content: space-between;
         height: 49px;
     }
-    header .header-top .contatos{
+
+    header .header-top .contatos {
         display: flex;
         gap: 26px;
     }
-    header .header-top .contatos .phone, .email{
+
+    header .header-top .contatos .phone,
+    .email {
         display: flex;
         align-items: center;
         gap: 23px;
     }
-    header .header-top .contatos #idphone, #idemail{
+
+    header .header-top .contatos #idphone,
+    #idemail {
         width: 26px;
     }
-    header .header-top .midias-sociais{
+
+    header .header-top .midias-sociais {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         width: 130px;
     }
-    header #linhamarela{
+
+    header #linhamarela {
         width: 100vw;
         border: 1px solid #F9AA01;
     }
-    header .header-bottom{
+
+    header .header-bottom {
         height: 91px;
         /* border: 2px dotted beige; */
     }
+
     header .header-bottom img.logo {
         width: 200px;
     }
+
     header .header-bottom nav {
         position: static;
         width: 407px;
@@ -398,11 +556,13 @@ footer #newsletter form button h3{
         padding-bottom: 0px;
         /* border: 2px dotted gold; */
     }
-    header .header-bottom nav > a{
+
+    header .header-bottom nav>a {
         font-size: 14px;
         border: none;
     }
-    header .header-bottom nav > a:hover{
+
+    header .header-bottom nav>a:hover {
         color: #F9AA01;
         text-shadow: 0px 0px 10px white;
         background-color: transparent;
@@ -418,11 +578,13 @@ footer #newsletter form button h3{
         gap: 30px;
         /* border: 2px dotted yellow; */
     }
+
     /* MAIN */
     main {
         margin-top: 0;
     }
-    main .banner{
+
+    main .banner {
         background-image: url(../assets/images/Vector.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -430,19 +592,23 @@ footer #newsletter form button h3{
         width: auto;
         height: 722px;
     }
-    main .jogos{
+
+    main .jogos {
         height: 500px;
     }
-    main .jogos .jogos-flex{
+
+    main .jogos .jogos-flex {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-    main .jogos .jogos-flex img{
+
+    main .jogos .jogos-flex img {
         width: 556px;
     }
-    main .programer{
+
+    main .programer {
         height: 1000px;
         background-color: #F9AA01;
         display: flex;
@@ -450,14 +616,16 @@ footer #newsletter form button h3{
         align-items: center;
         padding-top: 85px;
     }
-    main .programer #tituloprogramer{
+
+    main .programer #tituloprogramer {
         color: #1B1426;
         text-transform: uppercase;
         letter-spacing: 5px;
         font-size: 40;
         font-family: TitilliumWeb-Black;
     }
-    main .programer #linhapreta{
+
+    main .programer #linhapreta {
         border: #1B1426;
         width: 204px;
         height: 1px;
