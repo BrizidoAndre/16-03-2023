@@ -38,6 +38,12 @@ p {
     font-family: Quicksand;
 }
 
+h2 {
+    font-family: titilliumweb-black;
+    font-size: 18px;
+    color: #1B1426;
+}
+
 /* Classes genéricas */
 .mostrar-menu {
     left: 0 !important;
@@ -60,10 +66,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-/* Todos os placeholders desse projeto foram dessa cor, entao permanecemos */
-::placeholder{
-    color: white;
-}
+
 /* Mobile First */
 
 /* HEADER */
@@ -160,8 +163,8 @@ header .header-bottom nav .midias-sociais>a:hover {
 header .header-bottom .menu-usuarios {
     position: fixed;
     top: 60px;
-    right: -20vw;
-    width: 20vw;
+    right: -19vw;
+    width: 19vw;
     height: 170px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
@@ -173,119 +176,6 @@ header .header-bottom .menu-usuarios {
 
     transition: right 0.4s;
 }
-
-section {
-    background-image: url(../assets/images/Background/Retangulo_com_blur.png);
-    background-size: cover;
-
-    height: 756px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main section .caixalogin {
-    width: 335px;
-    height: 462px;
-    padding: 1px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    backdrop-filter: blur(6px);
-
-    border-image-slice: 1;
-    border-radius: 8px;
-    border: 1px solid transparent;
-
-    background:
-        /* Efeito no fundo */
-        linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)) padding-box,
-        /* Efeito na borda */
-        linear-gradient(to right bottom, #FFFFFF, #FFFFFF00) border-box;
-}
-
-main section .caixalogin>hr {
-    border: 1px solid #F9AA01;
-    width: 90px;
-    margin-top: 46px;
-}
-
-main section .caixalogin>h2 {
-    font-family: titilliumweb-black;
-    font-size: 28px;
-    color: white;
-    text-transform: uppercase;
-}
-/* Criei essa barra de cadastro para facilitar o espacamento entre os inputs */
-main section .caixalogin .barradecadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 31px;
-
-    margin-top: 90px;
-}
-
-main section .caixalogin .barradecadastro .caixadetexto{
-    width: 273px;
-    height: 40px;
-
-    padding: 5px 10px;
-
-    border-image-slice: 1;
-    border-radius: 8px;
-    border: 1px solid transparent;
-
-    display: flex;
-    align-items: center;
-
-    background:
-        /* Efeito no fundo */
-        linear-gradient(to right, #7c7c7c50, #7c7c7c05) padding-box,
-        /* Efeito na borda */
-        linear-gradient(to right, #FFFFFF, #FFFFFF00) border-box;
-}
-
-main section .caixalogin .barradecadastro .caixadetexto input{
-    background-color: transparent;
-    outline: transparent;
-    border: transparent;
-    color: #FFFFFF;
-    text-align: end;
-
-    background-image: url(../assets/icons/input/Vector.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
-/* Esse hover remove o icone facilitando a visualizacao do que o usuario esta digitando */
-main section .caixalogin .barradecadastro .caixadetexto input:hover{
-    background-image: none
-}
-
-main section .caixalogin .barradecadastro #passwordinput input{
-    background-image: url(../assets/icons/input/Vector\ \(1\).png);
-}
-main section .caixalogin .barradecadastro #passwordinput input:hover{
-    background-image: none;
-}
-main section .caixalogin .barradecadastro button{
-    background-color: #F9AA01;
-    border: 1px solid #F9AA01;
-
-    font-family: titilliumweb-black;
-    font-size: 24px;
-    color: black;
-
-    margin-top: calc(56px - 31px);
-
-    width: 273px;
-    height: 40px;
-    border-radius: 8px;
-}
-
 footer {
     box-shadow: inset 0 30px 9cm rgba(0, 0, 0, 1);
     background-image: url(../assets/images/backgroung_footer.png);

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table{
+            width: 50%;
+            position: relative;
+            text-align: center;
+            border-radius: 5px;
+            background-image: linear-gradient(to left top, #21ff08, #30562e);
+            padding: 5px;
+        }
+        table::before{
+            content: "";
+            position: absolute;
+            inset: 1;
+            z-index: -1;
+            margin: 0px;
+            border-radius: 5px;
+            background: linear-gradient(to left top, #FFFFFF, #000);
+        }
+        table th{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de equipes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Foto</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>LOUD</td>
+                <td><img src="../assets/images/LOUD_LOGO 1.png" alt="Logotipo da equipe loud, um triangulo isoceles com sua ponta virada para o lado esquerdo"></td>
+                <td><img src="../assets/icons/icon yellow/Vector.png" alt="Icone de lixeira"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td><img src="../assets/images/LOUD_LOGO 1.png" alt="Logotipo da equipe loud, um triangulo isoceles com sua ponta virada para o lado esquerdo"></td>
+                <td><img src="../assets/icons/icon yellow/Vector.png" alt="Icone de lixeira"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Joana D`ark</td>
+                <td><img src="../assets/images/LOUD_LOGO 1.png" alt="Logotipo da equipe loud, um triangulo isoceles com sua ponta virada para o lado esquerdo"></td>
+                <td><img src="../assets/icons/icon yellow/Vector.png" alt="Icone de lixeira"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total:</td>
+                <td>Total:</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
